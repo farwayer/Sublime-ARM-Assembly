@@ -260,7 +260,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\.(globl|global|macro|endm|purgem|if|elseif|else|endif|section|text|arm|align|balign|irp|rept|endr|req|unreq|error|short|func|endfunc|hidden|type|fpu|arch|code|altmacro|object_arch)\b</string>
+			<string>\.(globl|global|macro|endm|purgem|if|elseif|else|endif|section|text|arm|align|balign|irp|rept|endr|req|unreq|error|short|func|endfunc|hidden|type|fpu|arch|code|altmacro|object_arch|extern|equ|set)\b</string>
 			<key>name</key>
 			<string>keyword.control.directive</string>
 		</dict>
