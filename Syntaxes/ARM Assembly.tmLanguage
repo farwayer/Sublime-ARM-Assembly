@@ -242,15 +242,9 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\#[0-9a-f]+\b</string>
+			<string>\#(0x)?[0-9a-f]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.literal</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\#\S+\b</string>
-			<key>name</key>
-			<string>constant.language</string>
 		</dict>
 		<dict>
 			<key>match</key>
