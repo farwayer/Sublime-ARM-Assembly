@@ -230,7 +230,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((vadd|vsub|vmov|vtrn|vqdmulh|vmul|vld1|vqadd|vqshrun|vst[1234]|vaddw|vmull|vmlal|vrshrn|qmovun|vswp|vqmovun)\.([isup]?8|[isupf]?16|[isuf]?32|[isu]?64)|(subs|tst|beq|bge|bgt|mov|push|pop|cmp|blt|pld|adr|adrl|vswp|vpush|ldr|add|vpop|bx))?\b</string>
+			<string>\b(?i)((vadd|vsub|vmov|vtrn|vqdmulh|vmul|vld1|vqadd|vqshrun|vst[1234]|vaddw|vmull|vmlal|vrshrn|qmovun|vswp|vqmovun)\.([isup]?8|[isupf]?16|[isuf]?32|[isu]?64)|((((S|Q|SH|U|UQ|uh)(add|sub)))(8|16)|(add|sub|adc|sbc|rs[bc])s?|adr|(qd?(sub|add))|(usad(a?))(8|16)|([us]sat)(|16)|(mul|mla|[us]mull|umaal|[us]mlal)(|s)|(sm(ul|la(|l|w))[bt][bt])|((sm[ul]ad)|(smlald|smusd|smls(l?)d|smmul|smml[as]))(x?)|(mia(|(ph)|([bt][bt])))|([us]div)|mov(|s|t)|mvn(s?)|mra|mar|((asr)|(ls[lr])|ror|rrx)(s?)|clz|cmp|cmn|tst|teq|(and|eor|orr|orn|bic)s?|bfc|bfi|[su]bfx|pkgbt|pkhtb|[su]xt(a?)h|[su]xtb(16)?|rbit|rev(16|sh)?|sel|it[te]([te])?([te])?|b(l|x|lx|xj)?|cbn?z|tb[bh]|mrs|msr|cpsi[de]|(str|ldr)((s?[bh]t?)|d)|(srs|rfe)(ia|ib|da|db)|(ldm|stm)(fd|ed|fa|ea)|(ld|st)rexd?|clrex|(cdp|mrr?c|mcrr?|ldc|stc)2?|swpb?|bkpt|s[mv]c|nop|dbg|d[ms]b|isb|sev|wf[ei]|yield|pop|push|cps|setend|mls|b|pld|adrl|vswp|vpush|ldr|add|vpop|bx))(eq|ne|cs|hs|cc|lo|mi|pl|vs|vc|hi|ls|ge|lt|gt|le|al)?\b</string>
 			<key>name</key>
 			<string>keyword.mnemonic</string>
 		</dict>
@@ -238,7 +238,7 @@
 			<key>match</key>
 			<string>^\S+:</string>
 			<key>name</key>
-			<string>entity.name.label</string>
+			<string>entity.name.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -260,13 +260,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\.(globl|global|macro|endm|purgem|if|elseif|else|endif|section|text|arm|align|balign|irp|rept|endr|req|unreq|error|short|func|endfunc|hidden|type|fpu|arch|code|altmacro|object_arch|extern|equ|set)\b</string>
+			<string>\.(globl|global|macro|endm|purgem|if|elseif|else|endif|section|text|arm|align|balign|irp|rept|endr|req|unreq|error|short|func|endfunc|hidden|type|fpu|arch|code|altmacro|object_arch|extern|equ|set|h?word|byte|double|float|size|skip|space|string)\b</string>
 			<key>name</key>
 			<string>keyword.control.directive</string>
 		</dict>
 		<dict>
 			<key>match</key>
-            <string>\b([rcp]1[0-5]|[rcp][0-9]|a[1-4]|v[1-8]|sl|sb|fp|ip|sp|lr|pc|[sd]3[0-1]|[sd][12][0-9]|[sd][0-9]|fpsid|fpscr|fpexc|q1[0-5]|q[0-9])?\b</string>
+            <string>\b(?i)([rcp]1[0-5]|[rcp][0-9]|a[1-4]|v[1-8]|sl|sb|fp|ip|sp|lr|pc|[sd]3[0-1]|[sd][12][0-9]|[sd][0-9]|fpsid|fpscr|fpexc|q1[0-5]|q[0-9]|[acs]psr|cpsr_c)?\b</string>
 			<key>name</key>
 			<string>storage.type.register</string>
 		</dict>
