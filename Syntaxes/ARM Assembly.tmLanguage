@@ -248,13 +248,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\#\S+\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b[0-9]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.dec</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b0x[0-9a-fA-F]?\b</string>
+			<string>\b0x[0-9a-fA-F]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.hex</string>
 		</dict>
